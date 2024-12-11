@@ -1,5 +1,4 @@
 import { FlashcardManager } from "./managers/FlashcardManager.js";
-import { ReminderManager } from "./managers/ReminderManager.js";
 import { DatabaseManager } from "./managers/DatabaseManager.js";
 import { ApiService } from "./services/ApiService.js";
 import { SyncService } from "./services/SyncService.js";
@@ -30,7 +29,6 @@ class App {
       apiService,
       syncService
     );
-    this.reminderManager = new ReminderManager();
   }
 }
 
