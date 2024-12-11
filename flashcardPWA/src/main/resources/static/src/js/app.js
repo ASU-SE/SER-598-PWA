@@ -1,5 +1,4 @@
 import { FlashcardManager } from "./managers/FlashcardManager.js";
-import { ReminderManager } from "./managers/ReminderManager.js";
 import { ApiService } from "./services/ApiService.js";
 
 class App {
@@ -21,7 +20,6 @@ class App {
     // Initialize services and managers
     const apiService = new ApiService();
     this.flashcardManager = new FlashcardManager(apiService);
-    this.reminderManager = new ReminderManager();
   }
 }
 
