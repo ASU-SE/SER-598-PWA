@@ -1,5 +1,3 @@
-import { ReminderManager } from "./ReminderManager.js";
-
 export class FlashcardManager {
   constructor(dbManager, apiService, syncService) {
     this.dbManager = dbManager;
@@ -8,7 +6,6 @@ export class FlashcardManager {
     this.cards = [];
     this.currentCardIndex = 0;
     this.cardContainer = document.querySelector("#card-wrapper");
-    this.reminderManager = new ReminderManager();
 
     //sync
     this.syncStatus = document.createElement("div");
