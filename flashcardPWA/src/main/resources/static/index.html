@@ -19,9 +19,6 @@
     <link rel="apple-touch-icon" sizes="192x192" href="/icons/192x192.png" />
     <link rel="apple-touch-icon" sizes="384x384" href="/icons/384x384.png" />
 
-    <!-- Web Manifest -->
-    <link rel="manifest" href="/manifest.json" />
-
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -121,20 +118,7 @@
           document.getElementById("splash-screen").classList.add("hide");
         }, 2000);
       });
-
-      // Register service worker
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", async () => {
-          try {
-            const registration = await navigator.serviceWorker.register(
-              "/service-worker.js"
-            );
-            console.log("ServiceWorker registration successful");
-          } catch (error) {
-            console.error("ServiceWorker registration failed:", error);
-          }
-        });
-      }
+     
     </script>
   </body>
 </html>
