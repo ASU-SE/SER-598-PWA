@@ -2,6 +2,8 @@
 -> After cloning the repository
 -> To run, go the root folder
 -> ./gradlew bootRun
+
+
 -> To build using docker
 -> docker build -t study-sync .
 -> docker images : you should see the image of the app with name study-sync
