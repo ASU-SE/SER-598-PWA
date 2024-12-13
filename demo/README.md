@@ -40,11 +40,17 @@
 * How ever the postman collection won't be showing latest state
 * But as soon as you turn the internet on, the data will be synced to the backend and postman will reflect the same
 
+# Note
+* Because of this cache functionality, the service worker will cache all the pages at domain level
+* So your webpage will still be accessible even after the server is turned off
+* You can force clear the cache from the developers console -> Application -> clear data
+* Or you can try opening the site in incognito mode
+
 # Reminder
 * Make sure you have the notifications turned on
-* Click on the bell icon
+* Click on the bell icong
 * You will be prompted to add a reminder timing
-* As you enter the time. 
+* As you enter the time. (24 hr format)
 * A push notification will be trigger by the browser with the text "Time to study"
 
 # Android Mobile Simulation (Optional) This will work with chrome browser
